@@ -1,0 +1,21 @@
+<svg width="1400" height="933" viewBox="0 0 1400 933" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="digital-marketing placeholder graphic">
+  <defs>
+    <linearGradient id="g-coastal-fitness-ad-campaign-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111C34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="933" fill="url(#g-coastal-fitness-ad-campaign-2)"/>
+  <line x1="0" y1="9.6" x2="1400" y2="-50.4" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="188.9" x2="1400" y2="128.9" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="373.1" x2="1400" y2="313.1" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="556.9" x2="1400" y2="496.9" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="752.0" x2="1400" y2="692.0" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/>
+  <circle cx="450.0" cy="58.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1050.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1150.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="250.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="850.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1050.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1250.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="350.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1150.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="450.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="850.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="550.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="650.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="750.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/>
+  <rect x="0" y="0" width="1400" height="933" fill="none" stroke="#2A3A5C" stroke-width="1" opacity="0.5"/>
+  <g transform="translate(168 0)">
+    
+    <line x1="550.72" y1="570.996" x2="849.28" y2="570.996" stroke="#2A3A5C" stroke-width="2"/>
+    <rect x="588.04" y="481.428" width="52.248" height="89.568" fill="#93C5FD"/>
+    <rect x="670.144" y="429.18" width="52.248" height="141.816" fill="#3B82F6"/>
+    <rect x="752.248" y="384.39599999999996" width="52.248" height="186.6" fill="#93C5FD"/>
+    <path d="M588.04 444.108 l 74.64 -52.248 l 52.248 29.856 l 89.568 -74.64" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="1400" height="933" viewBox="0 0 1400 933" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="it-solutions placeholder graphic">
+  <defs>
+    <linearGradient id="g-meridian-logistics-it-support-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111C34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="933" fill="url(#g-meridian-logistics-it-support-1)"/>
+  <line x1="0" y1="2.9" x2="1400" y2="-57.1" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="178.9" x2="1400" y2="118.9" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="376.5" x2="1400" y2="316.5" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="560.2" x2="1400" y2="500.2" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="740.6" x2="1400" y2="680.6" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/>
+  <circle cx="350.0" cy="58.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="58.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="650.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="450.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="550.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="950.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="50.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="650.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="950.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1250.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="350.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="450.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="550.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1150.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="50.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="150.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="850.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="950.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1250.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="350.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="950.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="250.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/>
+  <rect x="0" y="0" width="1400" height="933" fill="none" stroke="#2A3A5C" stroke-width="1" opacity="0.5"/>
+  <g transform="translate(168 0)">
+    
+    <rect x="580.576" y="317.22" width="238.848" height="82.10400000000001" rx="4" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+    <rect x="580.576" y="414.252" width="238.848" height="82.10400000000001" rx="4" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+    <rect x="580.576" y="511.284" width="238.848" height="82.10400000000001" rx="4" fill="none" stroke="#3B82F6" stroke-width="2.5"/>
+    <circle cx="617.896" cy="359.0184" r="2.5" fill="#93C5FD"/>
+    <circle cx="617.896" cy="454.5576" r="2.5" fill="#93C5FD"/>
+    <circle cx="617.896" cy="551.5896" r="2.5" fill="#93C5FD"/>
+  
+  </g>
+</svg>

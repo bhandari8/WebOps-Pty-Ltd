@@ -1,0 +1,21 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="digital-marketing placeholder graphic">
+  <defs>
+    <linearGradient id="g-digital-marketing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111C34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-digital-marketing)"/>
+  <line x1="0" y1="-1.1" x2="1200" y2="-61.1" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="188.6" x2="1200" y2="128.6" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="352.7" x2="1200" y2="292.7" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="535.0" x2="1200" y2="475.0" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="713.8" x2="1200" y2="653.8" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/>
+  <circle cx="471.4" cy="56.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="214.3" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="557.1" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="900.0" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="642.9" cy="281.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="128.6" cy="393.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="985.7" cy="393.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1157.1" cy="393.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="385.7" cy="618.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="557.1" cy="731.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="985.7" cy="731.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="814.3" cy="843.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1071.4" cy="843.8" r="1.6" fill="#2A3A5C" opacity="0.6"/>
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="#2A3A5C" stroke-width="1" opacity="0.5"/>
+  <g transform="translate(0 0)">
+    
+    <line x1="456" y1="550.8" x2="744" y2="550.8" stroke="#2A3A5C" stroke-width="2"/>
+    <rect x="492" y="464.4" width="50.4" height="86.39999999999999" fill="#93C5FD"/>
+    <rect x="571.2" y="414" width="50.4" height="136.79999999999998" fill="#3B82F6"/>
+    <rect x="650.4" y="370.8" width="50.4" height="180" fill="#93C5FD"/>
+    <path d="M492 428.4 l 72 -50.4 l 50.4 28.8 l 86.39999999999999 -72" fill="none" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="graphic-design placeholder graphic">
+  <defs>
+    <linearGradient id="g-graphic-design" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111C34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g-graphic-design)"/>
+  <line x1="0" y1="-3.0" x2="1200" y2="-63.0" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="170.7" x2="1200" y2="110.7" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="350.0" x2="1200" y2="290.0" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="543.4" x2="1200" y2="483.4" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="717.5" x2="1200" y2="657.5" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/>
+  <circle cx="128.6" cy="56.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="642.9" cy="56.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1157.1" cy="56.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="385.7" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="557.1" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="728.6" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1071.4" cy="168.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="471.4" cy="281.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1071.4" cy="281.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="300.0" cy="393.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="642.9" cy="393.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="642.9" cy="506.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1071.4" cy="618.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="128.6" cy="731.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="985.7" cy="731.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="385.7" cy="843.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="814.3" cy="843.8" r="1.6" fill="#2A3A5C" opacity="0.6"/>
+  <rect x="0" y="0" width="1200" height="900" fill="none" stroke="#2A3A5C" stroke-width="1" opacity="0.5"/>
+  <g transform="translate(0 0)">
+    
+    <circle cx="564" cy="428.4" r="79.2" fill="none" stroke="#93C5FD" stroke-width="2.5"/>
+    <rect x="585.6" y="370.8" width="136.79999999999998" height="136.79999999999998" rx="8" fill="none" stroke="#3B82F6" stroke-width="2.5" transform="rotate(8 600 450)"/>
+  
+  </g>
+</svg>

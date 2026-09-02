@@ -1,0 +1,18 @@
+<svg width="1400" height="933" viewBox="0 0 1400 933" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="graphic-design placeholder graphic">
+  <defs>
+    <linearGradient id="g-harbourline-brand-identity-2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#111C34"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="933" fill="url(#g-harbourline-brand-identity-2)"/>
+  <line x1="0" y1="7.6" x2="1400" y2="-52.4" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="179.3" x2="1400" y2="119.3" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="367.4" x2="1400" y2="307.4" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="561.3" x2="1400" y2="501.3" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/><line x1="0" y1="750.8" x2="1400" y2="690.8" stroke="#2A3A5C" stroke-width="1" opacity="0.35"/>
+  <circle cx="850.0" cy="58.3" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1150.0" cy="174.9" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="291.6" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="50.0" cy="408.2" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="850.0" cy="524.8" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1350.0" cy="641.4" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="450.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="650.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="750.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1050.0" cy="758.1" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="50.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="250.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="750.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="850.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/><circle cx="1050.0" cy="874.7" r="1.6" fill="#2A3A5C" opacity="0.6"/>
+  <rect x="0" y="0" width="1400" height="933" fill="none" stroke="#2A3A5C" stroke-width="1" opacity="0.5"/>
+  <g transform="translate(168 0)">
+    
+    <circle cx="662.68" cy="444.108" r="82.10400000000001" fill="none" stroke="#93C5FD" stroke-width="2.5"/>
+    <rect x="685.072" y="384.39599999999996" width="141.816" height="141.816" rx="8" fill="none" stroke="#3B82F6" stroke-width="2.5" transform="rotate(8 700 466.5)"/>
+  
+  </g>
+</svg>
