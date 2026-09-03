@@ -17,10 +17,6 @@
   --color-text: #0f172a;
   --color-text-muted: #475569;
   --color-text-subtle: #64748b;
-
-  /* shadcn semantic tokens, mapped onto the WebOps brand palette above so
-     every shadcn/ui component (Button, Badge, Card, Dialog, ...) picks up
-     the brand automatically without per-component overrides. */
   --background: #ffffff;
   --foreground: #0f172a;
   --card: #ffffff;
@@ -155,10 +151,6 @@ body {
 .animate-marquee {
   animation: marquee linear infinite;
 }
-
-/* Interactive "spotlight" hover effect for cards — a mouse-tracked glow.
-   Paired with the useSpotlight hook, which sets --spotlight-x/y on
-   pointermove. Pure CSS otherwise, so it costs no React re-renders. */
 .spotlight {
   position: relative;
   isolation: isolate;

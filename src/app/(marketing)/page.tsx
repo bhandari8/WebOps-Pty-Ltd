@@ -10,6 +10,8 @@ import { CTASection } from "@/components/shared/CTASection";
 import { SmoothScroll } from "@/components/home/SmoothScroll";
 import { ScrollAnimations } from "@/components/home/ScrollAnimations";
 import { siteSettings } from "@/data/site";
+import { getFeaturedServices } from "@/repositories/serviceRepository";
+import { getFeaturedPortfolioProjects } from "@/repositories/portfolioRepository";
 
 export const metadata: Metadata = {
   title: `${siteSettings.companyName} | ${siteSettings.tagline}`,
@@ -17,7 +19,10 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-export default function HomePage() {
+export default async function HomePage() {
+  const services = await getFeaturedServices();
+  const projects = await getFeaturedPortfolioProjects();
+
   return (
     <>
       <SmoothScroll />
@@ -25,10 +30,10 @@ export default function HomePage() {
       <Hero />
       <TechMarquee />
       <CompanyIntro />
-      <ServicesOverview />
+      <ServicesOverview services={services} />
       <HowWeWork />
       <HomeFeatureBento />
-      <FeaturedPortfolio />
+      <FeaturedPortfolio projects={projects} />
       <CTASection backgroundImage="/images/photos/client-working-laptop.jpg" />
     </>
   );

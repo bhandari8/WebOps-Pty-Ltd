@@ -20,4 +20,5 @@ export function ValuesGrid({ values }: { values: AboutValue[] }) {
       </Container>
     </section>
   );
+  
 }

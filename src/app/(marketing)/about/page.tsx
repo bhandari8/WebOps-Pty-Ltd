@@ -4,6 +4,7 @@ import { AboutPageClient } from "@/components/about/AboutPageClient";
 
 export async function generateMetadata(): Promise<Metadata> {
   const about = await getAboutContent();
+
   return {
     title: about.title,
     description: about.introduction,
@@ -12,6 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const initial = await getAboutContent();
-  return <AboutPageClient initial={initial} />;
+  const about = await getAboutContent();
+
+  return <AboutPageClient about={about} />;
 }

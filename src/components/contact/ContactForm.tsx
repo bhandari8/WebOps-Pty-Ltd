@@ -108,7 +108,7 @@ export function ContactForm({ initialService = "" }: { initialService?: string }
 
       <FormField id="service" label="Service" required error={errors.service}>
         <Select
-          value={values.service || undefined}
+          value={values.service}
           onValueChange={(v) => setField("service", String(v))}
         >
           <SelectTrigger

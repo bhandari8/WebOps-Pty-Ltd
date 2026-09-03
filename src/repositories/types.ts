@@ -6,6 +6,7 @@ import type { Enquiry, EnquiryInput, EnquiryStatus } from "@/types/enquiry";
 export interface ServiceRepository {
   getServices(): Promise<Service[]>;
   getActiveServices(): Promise<Service[]>;
+  getFeaturedServices(): Promise<Service[]>;
   getServiceBySlug(slug: string): Promise<Service | null>;
   getServiceById(id: string): Promise<Service | null>;
   createService(input: ServiceInput): Promise<Service>;
@@ -16,7 +17,11 @@ export interface ServiceRepository {
 export interface PortfolioRepository {
   getPortfolioProjects(): Promise<PortfolioProject[]>;
   getPublishedPortfolioProjects(): Promise<PortfolioProject[]>;
+  getFeaturedPortfolioProjects(): Promise<PortfolioProject[]>;
   getPortfolioProjectBySlug(slug: string): Promise<PortfolioProject | null>;
+  getPublishedPortfolioProjectsByServiceId(
+  serviceId: string,
+): Promise<PortfolioProject[]>;
   getPortfolioProjectById(id: string): Promise<PortfolioProject | null>;
   createPortfolioProject(input: PortfolioProjectInput): Promise<PortfolioProject>;
   updatePortfolioProject(

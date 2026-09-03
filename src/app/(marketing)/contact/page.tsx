@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { ContactPageClient } from "@/components/contact/ContactPageClient";
-import { Container } from "@/components/ui/Container";
-import { LoadingState } from "@/components/ui/LoadingState";
+import { ENQUIRY_SERVICE_OPTIONS } from "@/types/enquiry";
 import { siteSettings } from "@/data/site";
 
 export const metadata: Metadata = {
@@ -11,16 +9,22 @@ export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
 };
 
-export default function ContactPage() {
-  return (
-    <Suspense
-      fallback={
-        <Container>
-          <LoadingState label="Loading contact form" rows={1} />
-        </Container>
-      }
-    >
-      <ContactPageClient />
-    </Suspense>
-  );
+export default async function ContactPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ service?: string | string[] }>;
+}) {
+  const params = await searchParams;
+
+  const requestedService = Array.isArray(params.service)
+    ? params.service[0] ?? ""
+    : params.service ?? "";
+
+  const initialService = ENQUIRY_SERVICE_OPTIONS.includes(
+    requestedService as (typeof ENQUIRY_SERVICE_OPTIONS)[number],
+  )
+    ? requestedService
+    : "";
+
+  return <ContactPageClient initialService={initialService} />;
 }

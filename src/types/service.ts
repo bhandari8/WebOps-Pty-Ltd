@@ -6,6 +6,7 @@ export interface Service {
   description: string;
   icon?: string;
   image?: string;
+  imageMediaId?: string;
   features: string[];
   featured: boolean;
   active: boolean;

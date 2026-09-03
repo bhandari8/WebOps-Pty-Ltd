@@ -1,57 +1,117 @@
-import type { Enquiry, EnquiryInput, EnquiryStatus } from "@/types/enquiry";
+import { desc, eq } from "drizzle-orm";
+
+import type {
+  Enquiry,
+  EnquiryInput,
+  EnquiryStatus,
+} from "@/types/enquiry";
 import type { EnquiryRepository } from "./types";
-import { enquiries as seedEnquiries } from "@/data/enquiries";
-import { readOrSeed, writeStorage, STORAGE_KEYS } from "@/lib/storage";
-import { generateId } from "@/lib/id";
 
-class StaticEnquiryRepository implements EnquiryRepository {
-  private readAll(): Enquiry[] {
-    return readOrSeed(STORAGE_KEYS.enquiries, seedEnquiries);
-  }
+import { db } from "@/db";
+import { enquiries } from "@/db/schema";
 
-  private writeAll(items: Enquiry[]): void {
-    writeStorage(STORAGE_KEYS.enquiries, items);
-  }
+function mapEnquiry(
+  row: typeof enquiries.$inferSelect,
+): Enquiry {
+  return {
+    id: row.id,
+    name: row.name,
+    email: row.email,
+    phone: row.phone ?? undefined,
+    company: row.company ?? undefined,
+    service: row.service,
+    message: row.message,
+    status: row.status,
+    createdAt: row.createdAt.toISOString(),
+  };
+}
 
+class DbEnquiryRepository implements EnquiryRepository {
   async getEnquiries(): Promise<Enquiry[]> {
-    return [...this.readAll()].sort(
-      (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-    );
+    const rows = await db
+      .select()
+      .from(enquiries)
+      .orderBy(desc(enquiries.createdAt));
+
+    return rows.map(mapEnquiry);
   }
 
-  async getEnquiryById(id: string): Promise<Enquiry | null> {
-    const all = this.readAll();
-    return all.find((e) => e.id === id) ?? null;
+  async getEnquiryById(
+    id: string,
+  ): Promise<Enquiry | null> {
+    const rows = await db
+      .select()
+      .from(enquiries)
+      .where(eq(enquiries.id, id))
+      .limit(1);
+
+    if (rows.length === 0) {
+      return null;
+    }
+
+    return mapEnquiry(rows[0]);
   }
 
-  async createEnquiry(input: EnquiryInput): Promise<Enquiry> {
-    const all = this.readAll();
-    const enquiry: Enquiry = {
-      ...input,
-      id: generateId("enq"),
-      status: "new",
-      createdAt: new Date().toISOString(),
-    };
-    this.writeAll([...all, enquiry]);
-    return enquiry;
+  async createEnquiry(
+    input: EnquiryInput,
+  ): Promise<Enquiry> {
+    const [row] = await db
+      .insert(enquiries)
+      .values({
+        name: input.name,
+        email: input.email,
+        phone: input.phone ?? null,
+        company: input.company ?? null,
+        service: input.service,
+        message: input.message,
+        status: "new",
+      })
+      .returning();
+
+    if (!row) {
+      throw new Error("Failed to create enquiry");
+    }
+
+    return mapEnquiry(row);
   }
 
-  async updateEnquiryStatus(id: string, status: EnquiryStatus): Promise<Enquiry | null> {
-    const all = this.readAll();
-    const index = all.findIndex((e) => e.id === id);
-    if (index === -1) return null;
-    const updated: Enquiry = { ...all[index], status };
-    const next = [...all];
-    next[index] = updated;
-    this.writeAll(next);
-    return updated;
+  async updateEnquiryStatus(
+    id: string,
+    status: EnquiryStatus,
+  ): Promise<Enquiry | null> {
+    const [row] = await db
+      .update(enquiries)
+      .set({
+        status,
+      })
+      .where(eq(enquiries.id, id))
+      .returning();
+
+    if (!row) {
+      return null;
+    }
+
+    return mapEnquiry(row);
   }
 }
 
-export const enquiryRepository: EnquiryRepository = new StaticEnquiryRepository();
+export const enquiryRepository: EnquiryRepository =
+  new DbEnquiryRepository();
 
-export const getEnquiries = () => enquiryRepository.getEnquiries();
-export const getEnquiryById = (id: string) => enquiryRepository.getEnquiryById(id);
-export const createEnquiry = (input: EnquiryInput) => enquiryRepository.createEnquiry(input);
-export const updateEnquiryStatus = (id: string, status: EnquiryStatus) =>
-  enquiryRepository.updateEnquiryStatus(id, status);
+export const getEnquiries = () =>
+  enquiryRepository.getEnquiries();
+
+export const getEnquiryById = (id: string) =>
+  enquiryRepository.getEnquiryById(id);
+
+export const createEnquiry = (input: EnquiryInput) =>
+  enquiryRepository.createEnquiry(input);
+
+export const updateEnquiryStatus = (
+  id: string,
+  status: EnquiryStatus,
+) =>
+  enquiryRepository.updateEnquiryStatus(
+    id,
+    status,
+  );

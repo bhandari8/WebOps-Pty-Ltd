@@ -1,17 +1,15 @@
-"use client";
-
+import type { Service } from "@/types/service";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ServiceGrid } from "@/components/services/ServiceGrid";
-import { LoadingState } from "@/components/ui/LoadingState";
-import { ErrorState } from "@/components/ui/ErrorState";
-import { useServices } from "@/hooks/useServices";
 
-export function ServicesOverview() {
-  const { data: services, loading, error, refetch } = useServices(true);
+interface ServicesOverviewProps {
+  services: Service[];
+}
 
+export function ServicesOverview({ services }: ServicesOverviewProps) {
   return (
-    <section className="py-16 sm:py-20 bg-surface-muted border-y border-border">
+    <section className="border-y border-border bg-surface-muted py-16 sm:py-20">
       <Container>
         <div data-aos="fade-up">
           <SectionHeading
@@ -20,14 +18,9 @@ export function ServicesOverview() {
             description="From a new website to ongoing IT support, brand design, and paid advertising — pick one service or work with us across the board."
           />
         </div>
+
         <div className="mt-10" data-aos="fade-up" data-aos-delay="100">
-          {loading ? (
-            <LoadingState label="Loading services" rows={4} />
-          ) : error ? (
-            <ErrorState onRetry={refetch} />
-          ) : (
-            <ServiceGrid services={services ?? []} />
-          )}
+          <ServiceGrid services={services} />
         </div>
       </Container>
     </section>
